@@ -1,4 +1,3 @@
-// main.js
 async function loadHTML(url, id) {
     const response = await fetch(url);
     const text = await response.text();
