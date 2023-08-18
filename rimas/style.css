@@ -1,0 +1,204 @@
+@media (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #FFFFFF;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  header {
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(37, 40, 46, 0.9764705882);
+    position: fixed;
+    z-index: 2;
+  }
+  header img {
+    display: flex;
+    width: 2.2rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-left: 0.7rem;
+  }
+  nav .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2.5em;
+    display: flex;
+    position: absolute;
+    top: 0.1rem;
+    margin-left: 85%;
+    color: #FFFFFF;
+  }
+  nav input[type=checkbox] {
+    display: none;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    margin-top: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.9098039216);
+    z-index: 1;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.2rem;
+    padding: 1em;
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    display: block;
+  }
+  nav input[type=checkbox]:checked ~ ul {
+    display: flex;
+  }
+  main {
+    width: 100%;
+  }
+  main img {
+    width: 100%;
+    display: flex;
+    z-index: 1;
+  }
+  main h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    color: white;
+    z-index: 1;
+  }
+  main section {
+    background-image: url(../src/svg/1.png), url(../src/svg/2.png), url(../src/svg/3.png);
+    background-position: left center, right center, top center;
+    background-size: 5rem, 5rem, 2rem;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: black;
+  }
+}
+@media (max-width: 576px) and (min-height: 600px) {
+  main section {
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 576px) and (min-height: 670px) {
+  main section {
+    margin-bottom: 9rem;
+  }
+}
+@media (max-width: 576px) and (min-height: 730px) {
+  main section {
+    margin-bottom: 14rem;
+  }
+}
+@media (max-width: 576px) and (min-height: 810px) {
+  main section {
+    margin-bottom: 18rem;
+  }
+}
+@media (max-width: 576px) {
+  main button {
+    width: 45%;
+    display: flex;
+    border: none;
+    justify-content: center;
+    background-color: transparent;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+  main .container {
+    width: 90%;
+    height: 3.5rem;
+    display: flex;
+    background: rgba(177, 168, 168, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.57);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    margin-left: 5%;
+  }
+  main .container .kort {
+    width: 3rem;
+    height: 2.95rem;
+    display: flex;
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.1);
+  }
+  main .container .text {
+    margin-left: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .container h4 {
+    margin-bottom: 0.3rem;
+  }
+  main .container p {
+    font-size: 0.5rem;
+    font-weight: bold;
+    width: 80%;
+  }
+  footer {
+    width: 100%;
+    height: 5.2rem;
+    background-color: rgba(37, 40, 46, 0.8745098039);
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  footer img {
+    width: 3rem;
+    height: 5rem;
+    margin-bottom: 0.1rem;
+  }
+  footer p {
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-size: 0.6rem;
+  }
+  footer a {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+  }
+  footer a:hover {
+    color: #E4405F;
+  }
+  @font-face {
+    font-family: Jost;
+    src: url(./Jost/static/Jost-ExtraLight.ttf);
+  }
+}/*# sourceMappingURL=style.css.map */

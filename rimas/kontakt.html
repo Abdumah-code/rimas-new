@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
+    <link rel="stylesheet" href="./css/kontakt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>kontakt</title>
+</head>
+<body>
+    <header>
+        <img src="./src/logo2.png" alt="">
+        <a href="./index.html" class="fas fa-home"></a>
+    </header>
+
+    <div class="kontakt" id="contact">
+        <h1>Kontakta oss</h1>
+        <form action="submit">
+            <label for="name">Namn:</label>
+            <input id="name" type="text">
+
+            <label for="Email">Email:</label>
+            <input id="email" type="email">
+
+            <label for="Phone">mobil:</label>
+            <input id="phone" type="tel">
+
+            <label for="people">Antal gäster::</label>
+            <input id="people" type="number">
+
+            <label for="event">Event:</label>
+            <input id="event" type="text">
+
+            <label for="diet">Preferenser:</label>
+            <select id="diet" name="diet" class="form__field" required>
+                <option value="vegetarian">Vegetariskt</option>
+                <option value="meat">Kött</option>
+            </select>  
+            
+            <input type="submit" value="Skicka" name="" id="">
+            
+            </form>
+    </div>
+
+    <footer></footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>

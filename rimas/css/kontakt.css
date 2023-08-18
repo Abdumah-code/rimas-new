@@ -1,0 +1,78 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header a {
+  color: white;
+  font-size: 1.5rem;
+  display: inline-flex;
+  margin: auto;
+}
+
+.kontakt {
+  max-width: 20rem;
+  margin: auto;
+  position: relative;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.kontakt h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+.kontakt label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+.kontakt input, .kontakt select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.kontakt input:focus, .kontakt select:focus {
+  border-color: #2c3e50;
+}
+.kontakt button, .kontakt input[type=submit] {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.kontakt button:hover, .kontakt input[type=submit]:hover {
+  background-color: #34495e;
+}
+
+footer {
+  display: none !important;
+}/*# sourceMappingURL=kontakt.css.map */
