@@ -4,26 +4,36 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; // This will center .kontakt vertically
-    height: 100vh; // Takes full viewport height
-    padding-top: 60px; // Assuming an approx height for the header, adjust as needed
-}
+    justify-content: center;
+    height: 100vh;
+    margin-top: 5rem;}
 
 header {
     width: 100%;
-    height: 60px; // specify a height for the header
-    display: flex; // turn header into a Flex container
-    align-items: center; // center children vertically
+    height: 4rem;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
+    padding: 0 1rem;
+}
 
-    a {
-        color: white;
-        font-size: 1.5rem;
-        display: inline-flex; // you can keep this as inline-flex
-        margin: auto; // no need for auto margins since we're using Flexbox for centering
-    }
+header::before, header::after {
+    content: "";  /* Create invisible blocks */
+    flex: 1;  /* This will take up available space equally on either side of the home icon */
+}
+
+// img {
+//     margin: 0;  /* Remove margin */
+//     order: -1;  /* This will push the logo to the left */
+// }
+
+a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    z-index: 1;
 }
 
 
@@ -82,5 +92,5 @@ header {
 }
 
 footer {
-    display: none !important;
+    display: none;
 }
