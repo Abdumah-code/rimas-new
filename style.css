@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .hidden {
+    display: none !important;
+  }
   body {
     background-color: #FFFFFF;
     display: flex;
@@ -62,6 +65,30 @@
   nav input[type=checkbox]:checked ~ ul {
     display: flex;
   }
+  .ptag {
+    display: flex;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 8rem;
+    font-size: 1rem;
+    z-index: 1;
+  }
+  .ptag-short {
+    display: flex;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 8rem;
+    font-size: 0.5rem;
+    z-index: 1;
+  }
   main {
     width: 100%;
   }
@@ -85,33 +112,39 @@
     background-size: 5rem, 5rem, 2rem;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 5rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    height: 13rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
+    font-size: 0.7rem;
     text-align: center;
     color: black;
   }
 }
 @media (max-width: 576px) and (min-height: 600px) {
   main section {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 576px) and (min-height: 670px) {
   main section {
-    margin-bottom: 9rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 576px) and (min-height: 730px) {
   main section {
-    margin-bottom: 14rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 576px) and (min-height: 810px) {
   main section {
-    margin-bottom: 18rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 576px) {

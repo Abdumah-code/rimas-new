@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .hidden {
+    display: none !important;
+  }
   body {
     background-color: white;
     display: flex;
@@ -74,24 +77,43 @@
     font-size: 3rem;
     z-index: 1;
   }
+  main .ptag {
+    display: flex;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 15rem;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
   main section {
-    background-image: url(../src/svg/1.png), url(../src/svg/2.png), url(../src/svg/3.png);
+    background-image: url(../src/svg/1.png), url(../src/svg/2.png);
     background-position: left center, right center, top center;
     background-size: 5rem, 5rem, 2rem;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2.5%;
     height: 5rem;
     margin-top: 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     color: black;
   }
+  main section p {
+    margin-bottom: 1%;
+  }
   main button {
-    width: 60%;
+    width: 50%;
     display: flex;
     border: none;
     justify-content: center;

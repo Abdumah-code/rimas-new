@@ -25,3 +25,34 @@ document.querySelector('a[href="#kontakt"]').addEventListener('click', function(
 
     window.location.href = "./kontakt.html";
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    function toggleTextContent() {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        // Assuming 576px is the breakpoint for "small screens"
+        if (width <= 576) {
+            // Toggle for main content
+            document.querySelector('.ptag').classList.add('hidden');
+            document.querySelector('.ptag-short').classList.remove('hidden');
+
+            // Toggle for section content
+            document.querySelectorAll('.p-short').forEach(p => p.classList.remove('hidden'));
+            document.querySelectorAll('section > p:not(.p-short)').forEach(p => p.classList.add('hidden'));
+        } else {
+            // Toggle for main content
+            document.querySelector('.ptag').classList.remove('hidden');
+            document.querySelector('.ptag-short').classList.add('hidden');
+
+            // Toggle for section content
+            document.querySelectorAll('.p-short').forEach(p => p.classList.add('hidden'));
+            document.querySelectorAll('section > p:not(.p-short)').forEach(p => p.classList.remove('hidden'));
+        }
+    }
+
+    // Initial check
+    toggleTextContent();
+
+    // Update on window resize
+    window.addEventListener('resize', toggleTextContent);
+});
