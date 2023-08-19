@@ -96,12 +96,18 @@
     justify-content: center;
     align-content: center;
     width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2.5%;
     height: 10rem;
     margin-top: 2rem;
     margin-bottom: 8rem;
     text-align: center;
     font-size: 1rem;
     color: black;
+  }
+  main section p {
+    margin-bottom: 1%;
   }
   main button {
     width: 40%;
