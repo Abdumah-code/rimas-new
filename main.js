@@ -9,9 +9,11 @@ loadHTML('./event.html', 'content');
 document.querySelector('a[href="#event"]').addEventListener('click', function(e) {
     e.preventDefault();
 
-    const targetElement = document.getElementById('evenemang');
+    // const targetElement = document.getElementById('evenemang');
 
-    targetElement.scrollIntoView({ behavior: 'auto' });
+    // targetElement.scrollIntoView({ behavior: 'auto' });
+
+    window.location.href = "./evenemang.html";
 });
 
 document.addEventListener("DOMContentLoaded", function() {
