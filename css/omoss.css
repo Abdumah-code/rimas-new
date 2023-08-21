@@ -1,0 +1,151 @@
+body {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+}
+header a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+  z-index: 1;
+}
+
+main {
+  width: 90%;
+  height: 200vh;
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+main .head {
+  font-weight: 700;
+}
+main .image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .imges {
+  width: 45%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+main .imges:hover {
+  transform: scale(1.05);
+}
+main .values-and-missions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .value-box {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+main .value-box:hover {
+  transform: scale(1.05);
+}
+main .value-item {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+main .mission-statements p {
+  margin: 10px 0;
+  color: #555;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-size: 0.6rem;
+}
+
+/* ... Your existing styles ... */
+@media only screen and (max-width: 768px) {
+  main {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  .image-container {
+    flex-direction: column;
+  }
+  .imges {
+    width: 100%;
+    margin-bottom: 20px; /* space between images when they are stacked */
+  }
+  .values-and-missions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .value-box {
+    width: 80%; /* make boxes wider on smaller screens */
+    margin-bottom: 20px; /* add space between boxes when they are stacked */
+  }
+}
+/* For phones */
+@media only screen and (max-width: 480px) {
+  header {
+    height: 3rem;
+  }
+  a {
+    font-size: 1.2rem;
+  }
+  main {
+    margin-top: 4rem; /* Increased from 3rem to 4rem */
+    margin-bottom: 4rem; /* New addition to add more space at the bottom */
+    padding-top: 2rem; /* Adds padding to the top of the main content */
+    padding-bottom: 2rem; /* Adds padding to the bottom of the main content */
+  }
+  .image-container {
+    margin-top: 1.5rem; /* Increased from 1rem to 1.5rem */
+    margin-bottom: 1.5rem; /* Increased from 1rem to 1.5rem */
+  }
+  .values-and-missions {
+    margin-top: 1.5rem; /* Increased from 1rem to 1.5rem */
+    margin-bottom: 1.5rem; /* Increased from 1rem to 1.5rem */
+  }
+  .value-box {
+    width: 90%; /* Increase this value as desired */
+    margin-bottom: 1rem; /* Increased from 20px to 25px */
+  }
+  footer {
+    padding-top: 2rem; /* Adds padding to the top of the footer */
+    padding-bottom: 2rem; /* Adds padding to the bottom of the footer */
+  }
+}/*# sourceMappingURL=omoss.css.map */
