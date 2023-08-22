@@ -2,6 +2,7 @@ body {
   width: 100%;
   height: auto;
   background-color: white;
+  flex-direction: column;
 }
 
 header {
@@ -22,6 +23,34 @@ header a {
   z-index: 1;
 }
 
+.mainImage {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 15rem;
+  font-size: 5rem;
+  z-index: 1;
+}
+
+.head {
+  width: 100%;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  z-index: 1;
+  margin-top: 25rem;
+  position: absolute;
+  text-align: center;
+}
+
 main {
   width: 90%;
   height: 200vh;
@@ -33,9 +62,6 @@ main {
   line-height: 2rem;
   font-family: "Jost", sans-serif;
   font-weight: 400;
-}
-main .head {
-  font-weight: 700;
 }
 main .image-container {
   display: flex;
@@ -118,10 +144,53 @@ footer p {
     margin-bottom: 20px; /* add space between boxes when they are stacked */
   }
 }
+@media only screen and (max-width: 768px) {
+  body {
+    height: 500vh !important;
+  }
+}
+@media only screen and (max-width: 834px) {
+  body {
+    height: 190vh !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    height: 160vh !important;
+  }
+}
 /* For phones */
 @media only screen and (max-width: 480px) {
+  body {
+    height: 400vh !important;
+  }
   header {
     height: 3rem;
+  }
+  .mainImage {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 5rem;
+    font-size: 3rem;
+    z-index: 1;
+  }
+  .head {
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    z-index: 1;
+    margin-top: 10rem;
+    position: absolute;
+    text-align: center;
   }
   a {
     font-size: 1.2rem;
@@ -141,11 +210,17 @@ footer p {
     margin-bottom: 1.5rem; /* Increased from 1rem to 1.5rem */
   }
   .value-box {
-    width: 90%; /* Increase this value as desired */
-    margin-bottom: 1rem; /* Increased from 20px to 25px */
+    width: 45% !important;
+    height: auto;
+    margin-bottom: 1rem;
   }
   footer {
     padding-top: 2rem; /* Adds padding to the top of the footer */
     padding-bottom: 2rem; /* Adds padding to the bottom of the footer */
+  }
+}
+@media only screen and (max-width: 393px) {
+  body {
+    height: 460vh !important;
   }
 }/*# sourceMappingURL=omoss.css.map */

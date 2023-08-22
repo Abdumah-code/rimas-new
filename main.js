@@ -9,21 +9,19 @@ loadHTML('./event.html', 'content');
 document.querySelector('a[href="#event"]').addEventListener('click', function(e) {
     e.preventDefault();
 
-    // const targetElement = document.getElementById('evenemang');
-
-    // targetElement.scrollIntoView({ behavior: 'auto' });
-
     window.location.href = "./evenemang.html";
 });
 
 document.querySelector('a[href="#omoss"]').addEventListener('click', function(e) {
     e.preventDefault();
 
-    // const targetElement = document.getElementById('evenemang');
-
-    // targetElement.scrollIntoView({ behavior: 'auto' });
-
     window.location.href = "./omoss.html";
+});
+
+document.querySelector('a[href="#gallerie"]').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    window.location.href = "./gallerie.html";
 });
 
 document.addEventListener("DOMContentLoaded", function() {

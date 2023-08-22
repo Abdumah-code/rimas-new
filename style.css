@@ -1,3 +1,7 @@
+@import url(./css/computer.css);
+@import url(./css/desktop.css);
+@import url(./css/mobilemed.css);
+@import url(./css/tablet.css);
 @media (max-width: 576px) {
   * {
     margin: 0;

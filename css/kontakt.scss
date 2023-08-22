@@ -5,8 +5,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin-top: 5rem;}
+    height: 180vh;
+    margin-top: 0rem;
+}
 
 header {
     width: 100%;
@@ -24,6 +25,34 @@ header::before, header::after {
     flex: 1;  /* This will take up available space equally on either side of the home icon */
 }
 
+.mainImage {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.kontaktaoss {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 15rem;
+    font-size: 5rem;
+    z-index: 1;
+}
+
+// .head {
+//     width: 100%;
+//     font-size: 2.5rem;
+//     color: white;
+//     font-weight: 700;
+//     z-index: 1;
+//     position: absolute;
+//     text-align: center;
+
+// }
+
 // img {
 //     margin: 0;  /* Remove margin */
 //     order: -1;  /* This will push the logo to the left */
@@ -40,6 +69,7 @@ a {
 .kontakt {
     max-width: 20rem;
     margin: auto;
+
     position: relative;
     padding: 3rem;
     background-color: rgba(255, 255, 255, 0.9);
@@ -93,4 +123,18 @@ a {
 
 footer {
     display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .kontaktaoss {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        color: white;
+        top: 5rem;
+        font-size: 2rem;
+        z-index: 1;
+    }
 }
