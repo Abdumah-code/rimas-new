@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
-    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
-    <link rel="stylesheet" href="./css/kontakt.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/into.css">
+    <link rel="stylesheet" href="./css/mainKontakt.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>kontakt</title>
@@ -16,12 +17,15 @@
         <a href="./index.html" class="fas fa-home"></a>
     </header>
 
-    <img class="mainImage" src="./src/splash.jpg" alt="some resturant imagery">
-    <h1 class="kontaktaoss">Kontakta Oss</h1>
-    <!-- <p class="head">Slå oss ett mejl!</p> -->
+     <section class="intro">
+        <img class="mainImage" src="./src/splash.jpg" alt="some resturant imagery">
+        <h1>Kontakta Oss</h1>
+        <p class="head">Slå oss ett mejl för ett offert!</p>
+    </section>
 
-    <div class="kontakt" id="contact">
-        <h1>Kontakta oss</h1>
+
+    <main class="kontakt" id="contact">
+        <!-- <h1>Kontakta oss</h1> -->
         <form>
             <label for="name">Namn:</label>
             <input id="name" type="text">
@@ -46,11 +50,14 @@
             
             <input type="submit" value="Skicka" name="" id="">  
         </form>
-    </div>
+    </main>
+
+    <div class="spacer"></div>   
 
     <footer>
-        
-    </footer>
+        <img src="./src/logo2.png" alt="Our companys logo">
+        <p>© 2023 Rimas Catering</p>
+    </footer> 
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./main.js"></script>

@@ -1,0 +1,181 @@
+@media (max-width: 576px){
+
+    img {
+        display: flex;
+        width: 100%;
+        z-index: 1;
+    }
+
+    h1 {
+        display: flex;
+        width: 100%;
+        font-size: 3rem;
+        top: 5rem;
+        color: white;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        font-weight: 700;
+    }
+
+    p {
+        display: flex;
+        width: 100%;
+        font-size: 2rem;
+        top: 10rem;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        font-family: 'jostis', sans-serif;
+        font-weight: 400;
+    }
+}
+    
+@media (min-width: 577px) and (max-width: 769px) {
+    img {
+        display: flex;
+        width: 100%;
+        z-index: 1;
+    }
+
+    h1 {
+        display: flex;
+        width: 100%;
+        font-size: 5rem;
+        top: 10rem;
+        color: white;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        font-weight: 700;
+    }
+
+    p {
+        display: flex;
+        width: 100%;
+        font-size: 3rem;
+        top: 15rem;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        font-family: 'jostis', sans-serif;
+        font-weight: 400;
+    }
+}
+    
+@media (min-width: 770px) and (max-width: 834px) {
+    img {
+        display: flex;
+        width: 100%;
+        z-index: 1;
+    }
+
+    h1 {
+        display: flex;
+        width: 100%;
+        font-size: 6rem;
+        top: 10rem;
+        color: white;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        font-weight: 700;
+    }
+
+    p {
+        display: flex;
+        width: 100%;
+        font-size: 3rem;
+        top: 16rem;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        font-family: 'jostis', sans-serif;
+        font-weight: 400;
+    }
+}
+    
+@media (min-width: 835px) and (max-width: 1024px) {
+    img {
+        display: flex;
+        width: 100%;
+        z-index: 1;
+    }
+
+    h1 {
+        display: flex;
+        width: 100%;
+        font-size: 7rem;
+        top: 10rem;
+        color: white;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        font-weight: 700;
+    }
+
+    p {
+        display: flex;
+        width: 100%;
+        font-size: 4rem;
+        top: 16rem;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        font-family: 'jostis', sans-serif;
+        font-weight: 400;
+    }
+}
+    
+@media (min-width: 1025px) {
+    img {
+        display: flex;
+        width: 100%;
+        z-index: 1;
+    }
+
+    h1 {
+        display: flex;
+        width: 100%;
+        font-size: 7rem;
+        top: 10rem;
+        color: white;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        font-weight: 700;
+    }
+
+    p {
+        display: flex;
+        width: 100%;
+        font-size: 4rem;
+        top: 16rem;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        font-family: 'jostis', sans-serif;
+        font-weight: 400;
+    }
+}
+
+@font-face {
+    font-family: Jostis;
+    src: url(../Jost/static/Jost-ExtraLight.ttf);
+  }
+    
+@import url(./computer.css);
+@import url(./desktop.css);
+@import url(./mobilemed.css);
+@import url(./tablet.css);
+@import url(../style.css);

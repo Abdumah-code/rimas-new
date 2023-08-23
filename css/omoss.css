@@ -1,20 +1,21 @@
 body {
   width: 100%;
-  height: auto;
   background-color: white;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
   width: 100%;
-  height: 4rem;
+  height: 5rem !important;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 0;
-  left: 0;
   padding: 0 1rem;
+  background-color: rgba(37, 40, 46, 0.8941176471);
 }
 header a {
   color: white;
@@ -52,6 +53,7 @@ h1 {
 }
 
 main {
+  flex: 1;
   width: 90%;
   height: 200vh;
   text-align: center;
@@ -113,9 +115,24 @@ main .mission-statements p {
   color: #555;
 }
 
-footer p {
+footer {
+  width: 100%;
+  height: 5.2rem;
+  background-color: rgba(37, 40, 46, 0.8745098039);
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  text-align: center;
+}
+footer img {
+  width: 3rem;
+  height: 5rem;
+  margin-bottom: 0.1rem;
+}
+footer p {
   color: white;
   font-family: "Jost", sans-serif;
   font-size: 0.6rem;
@@ -210,7 +227,7 @@ footer p {
     margin-bottom: 1.5rem; /* Increased from 1rem to 1.5rem */
   }
   .value-box {
-    width: 45% !important;
+    width: 55% !important;
     height: auto;
     margin-bottom: 1rem;
   }

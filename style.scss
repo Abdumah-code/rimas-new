@@ -22,8 +22,9 @@
 body {
   background-color: #FFFFFF;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 110vh;
+  height: auto;
   overflow-y: scroll;
 }
 
@@ -119,6 +120,8 @@ nav {
   
 main {
   width: 100%;
+  flex-grow: 1;
+  margin-bottom: 5.5rem;
 
   img {
     width: 100%;
@@ -188,6 +191,7 @@ main {
   }
     
   button {
+    color: black;
     width: 45%;
     display: flex;
     border: none;
@@ -245,10 +249,10 @@ main {
 footer {
   width: 100%;
   height: 5.2rem;
-  background-color: #25282edf;
-  position: fixed;
-  bottom: 0%;
-  left: 0%;
+  background-color: #25282ee4;
+  position: relative;
+  // bottom: 0%;
+  // left: 0%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,13 +272,12 @@ footer {
   }
 
   a {
-    display: inline-block;
+    position: absolute;
+    top: 40%;       /* position it at the top */
+    left: 1%;      /* position it to the left */
     font-size: 2.5rem;
     color: white;
     text-decoration: none;
-    position: absolute;
-    left: 0.5rem;
-    bottom: 0.5rem;
   }
 
   a:hover {
