@@ -207,26 +207,22 @@
   .text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: left;
     flex: 1;
-    position: relative;
   }
   h4 {
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
   .textp {
     display: flex;
     color: black;
-    position: absolute;
-    font-size: 1.7rem;
-    font-weight: 400;
-    max-width: 90%;
-    margin-top: 1rem;
+    position: static;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 90%;
+    margin-top: 0rem;
     text-align: left;
-    top: 1rem;
-    overflow: hidden;
-    z-index: 2;
   }
   .spacer {
     width: 100%;
