@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @media (max-width: 576px){
 header {
     width: 100%;
@@ -12,8 +18,9 @@ header {
         display: flex;
         width: 2.2rem;
         height: 3rem;
+        margin-right: 95%;
         margin-top: 0.5rem;
-        margin-left: 0.7rem;
+        margin-left: 2rem;
     }
 
     a {
@@ -36,10 +43,11 @@ header {
     
         img {
             display: flex;
-            width: 2.2rem;
-            height: 3rem;
+            width: 3.5rem;
+            height: 4rem;
+            margin-right: 95%;
             margin-top: 0.5rem;
-            margin-left: 0.7rem;
+            margin-left: 2rem;
         }
     
         a {
@@ -62,10 +70,11 @@ header {
     
         img {
             display: flex;
-            width: 2.2rem;
-            height: 3rem;
+            width: 3.5rem;
+            height: 4.5rem;
+            margin-right: 95%;
             margin-top: 0.5rem;
-            margin-left: 0.7rem;
+            margin-left: 2rem;
         }
     
         a {
@@ -88,10 +97,11 @@ header {
     
         img {
             display: flex;
-            width: 2.2rem;
-            height: 3rem;
+            width: 3.5rem;
+            height: 4.5rem;
+            margin-right: 95%;
             margin-top: 0.5rem;
-            margin-left: 0.7rem;
+            margin-left: 1.5rem;
         }
     
         a {
@@ -114,10 +124,11 @@ header {
     
         img {
             display: flex;
-            width: 2.2rem;
-            height: 3rem;
+            width: 3.2rem;
+            height: 4.5rem;
+            margin-right: 95%;
             margin-top: 0.5rem;
-            margin-left: 0.7rem;
+            margin-left: 1.5rem;
         }
     
         a {
@@ -128,8 +139,8 @@ header {
     }
 }
 
-@import url(./computer.css);
-@import url(./desktop.css);
-@import url(./mobilemed.css);
-@import url(./tablet.css);
-@import url(../style.css);
+// @import url(./computer.css);
+// @import url(./desktop.css);
+// @import url(./mobilemed.css);
+// @import url(./tablet.css);
+// @import url(../style.css);

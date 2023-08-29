@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (min-width: 777px) and (max-width: 834px) {
   * {
     margin: 0;
     padding: 0;
@@ -182,16 +182,25 @@
   footer p {
     color: white;
     font-family: "Jost", sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    position: static;
+    margin-bottom: -3.5rem;
   }
   footer a {
-    display: inline-block;
-    font-size: 2.5rem;
     color: white;
     text-decoration: none;
-    position: absolute;
-    left: 0.5rem;
-    bottom: 0.5rem;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+  footer .tag1 {
+    position: static;
+    margin-right: 95%;
+    margin-bottom: -2.9rem;
+  }
+  footer .tag2 {
+    position: static;
+    margin-right: 80%;
+    margin-bottom: 1.3rem;
   }
   footer a:hover {
     color: #E4405F;

@@ -24,6 +24,11 @@ document.querySelector('a[href="#gallerie"]').addEventListener('click', function
     window.location.href = "./gallerie.html";
 });
 
+document.querySelector('a[href="#kontakt"]').addEventListener('click', function(e) {
+
+    window.location.href = "./kontakt.html";
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('a[href="#hem"]').addEventListener('click', function(e) {
         e.preventDefault();
@@ -31,17 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.querySelector('a[href="#kontakt"]').addEventListener('click', function(e) {
-
-    window.location.href = "./kontakt.html";
-});
-
 document.addEventListener("DOMContentLoaded", function() {
     function toggleTextContent() {
         var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
         // Assuming 576px is the breakpoint for "small screens"
-        if (width <= 576) {
+        if (width <= 769 || width <= 576) {
             // Toggle for main content
             document.querySelector('.ptag').classList.add('hidden');
             document.querySelector('.ptag-short').classList.remove('hidden');
@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelectorAll('.p-short').forEach(p => p.classList.add('hidden'));
             document.querySelectorAll('section > p:not(.p-short)').forEach(p => p.classList.remove('hidden'));
         }
+        
     }
 
     // Initial check

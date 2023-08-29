@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (min-width: 835px) and (max-width: 1024px) {
   * {
     margin: 0;
     padding: 0;
@@ -19,6 +19,7 @@
     height: 6rem;
     background-color: rgba(37, 40, 46, 0.9764705882);
     position: fixed;
+    text-decoration: none;
     z-index: 2;
   }
   header img {

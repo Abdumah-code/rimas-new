@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="./src/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">    
-    <link rel="stylesheet" href="./css/mobilemed.css">
-    <link rel="stylesheet" href="./css/tablet.css">
-    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="html" href="./event.html">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mainEvent.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <!-- <link rel="stylesheet" href="./css/computer.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rimas catering</title>
@@ -17,19 +16,19 @@
     <div id="app">
       <header>
         <img id="home-img" src="./src/logo2.png" alt="Our companys logo">
-
-        <nav>
-          <input type="checkbox" id="menuToggle">
-          <label for="menuToggle" class="menu-icon">&#9776;</label>
-          <ul>
-            <li><a href="#hem">Hem</a></li>
-            <li><a href="#event">Event</a></li>
-            <li><a href="#gallerie">Gallerie</a></li>
-            <li><a href="#omoss">Om Oss</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
       </header>
+
+      <nav>
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle" class="menu-icon">&#9776;</label>
+        <ul>
+          <li><a href="#hem">Hem</a></li>
+          <li><a href="#event">Event</a></li>
+          <li><a href="#gallerie">Gallerie</a></li>
+          <li><a href="#omoss">Om Oss</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
 
       <main>
         <img src="./src/splash.jpg" alt="some resturant imagery">
@@ -56,29 +55,18 @@
           <p class="p-short">
             Varje evenemang förtjänar en unik touch. Och hos oss handlar det inte bara om maten - det handlar om att skapa oförglömliga upplevelser. Vår passion för detaljer, från val av färska ingredienser till presentationen på tallriken, garanterar att varje måltid blir ett konstverk i sig.
           </p>
-
-          <!-- <span class="short-content">Short version of the text for mobile...</span>
-          <span class="full-content">Full version of the text...</span>
-          <button class="read-more">Read More</button> -->
         </section>
+
+        <div class="spacer1"></div>
 
         <button>Nyheter / Evenemang</button>
 
-        <div id="content">
-          <!-- <img src="./src/plate.jpg" alt="">
-          <h4>Bröllop</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Aperiam nostrum et beatae adipisci! Repudiandae voluptatibus sapiente cupiditate neque labore illo debitis a 
-            porro, voluptatem quisquam aliquam. A in repudiandae perspiciatis.</p> -->
-        </div>
+        <div id="content"></div>
       </main>
 
       <div class="spacer"></div>
 
-      <footer>
-        <img src="./src/logo2.png" alt="Our companys logo">
-        <p>© 2023 Rimas Catering</p>
-        
+      <!-- <div class="links">
         <a class="tag1" href="https://www.instagram.com/rimas.catering/" target="_blank" class="insta">
           <i class="fab fa-instagram"></i>
         </a>
@@ -86,7 +74,11 @@
         <a class="tag2" href="https://www.linkedin.com/company/rimas-catering/about/" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
-        
+      </div> -->
+
+      <footer>
+        <img src="./src/logo2.png" alt="Our companys logo">
+        <p>© 2023 Rimas Catering</p>
       </footer>
     </div>
     <script type="module" src="./main.js"></script>

@@ -1,4 +1,4 @@
-// @import url(./css/computer.css);
+@import url(./css/computer.css);
 @import url(./css/desktop.css);
 // @import url(./css/Evenemang.css);
 // @import url(./css/gallerie.css);
@@ -273,33 +273,34 @@ footer {
   p {
     color: white;
     font-family: 'Jost', sans-serif;
-    font-size: 0.6rem;
-  }
-
-  .social-icons {
-    position: absolute;
-    top: 40%;
-    left: 1%;
-    display: flex;
-    justify-content: space-between;
-
-  a {
-    font-size: 2.5rem;
-    color: white;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-
-  a:last-child {
-    margin-right: 0;
-  }
-
-  a:hover {
-    color: #E4405F;
-  }
-} 
+    font-size: 0.5rem;
+    position: static;
+    margin-bottom: -3.5rem;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.tag1 {
+    position: static;
+    margin-right: 95%;
+    margin-bottom: -1.7rem;
+}
+
+.tag2 {
+    position: static;
+    margin-right: 80%;
+    margin-bottom: 2rem;
+}
+
+a:hover {
+    color: #E4405F;
+}
+}
 
 @font-face {
   font-family: Jost;
