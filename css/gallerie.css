@@ -1,3 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: black;
+  margin: 0;
+  min-height: 100vh;
+  display: flex; /* Using flexbox for centering */
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  background: white;
+}
+
+.gallery {
+  --s: 150px; /* control the size */
+  --g: 10px; /* control the gap */
+  --f: 1.5; /* control the scale factor */
+  display: grid;
+  gap: var(--g);
+  width: calc(3 * var(--s) + 2 * var(--g) + var(--s) * (var(--f) - 1)); /* Adjusted width */
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3, auto);
+  overflow: hidden; /* This will ensure that enlarged images do not break the grid layout */
+}
+
+img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: 0.35s linear;
+}
+
+img:hover {
+  filter: grayscale(0);
+  width: calc(var(--s) * var(--f));
+  height: calc(var(--s) * var(--f));
 }/*# sourceMappingURL=gallerie.css.map */
