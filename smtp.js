@@ -11,6 +11,7 @@ document.querySelector('.kontakt form').addEventListener('submit', function (e) 
     var people = document.getElementById('people').value;
     var diet = document.getElementById('diet').value;
     var event = document.getElementById('event').value;
+    var otherInfo = document.getElementById('otherInfo').value;
 
     var body = 'Namn: ' + name + '<br>';
     body += 'Email: ' + email + '<br>';
@@ -18,6 +19,7 @@ document.querySelector('.kontakt form').addEventListener('submit', function (e) 
     body += 'Antal Gäster: ' + people + '<br>';
     body += 'Event: ' + event + '<br>';
     body += 'Preferenser: ' + diet + '<br>';
+    body += 'Andra upplysningar: ' + otherInfo + '<br>';
 
     Email.send({
       SecureToken : "f5040cc6-b5f0-41ae-9f7e-8c272cb338b6",
