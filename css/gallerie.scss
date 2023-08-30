@@ -1,47 +1,164 @@
-html {
+/* Universal Styles */
+
+* {
     box-sizing: border-box;
 }
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Styles for larger screens (greater than 1024px) */
+
+@media (min-width: 1025px) {
+    .gallery {
+      padding: 0 0 4rem 0;
+    }
+
+    .img-container {
+      width: 100%;
+      height: 500px;
+      cursor: pointer;
+      overflow: hidden;
+
+      &:hover .img-content-hover {
+        display: block;
+      }
+    }
+
+    .image-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    img {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .img-content-hover {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      display: none;
+      padding: 1rem;
+      background: white;
+      font-weight: 400;
+      margin-top: 1.25rem;
+      margin-left: -2rem;
+    }
+
+    .title {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .category {
+      font-size: 1rem;
+      color: gray;
+    }
+
+    .img-content {
+      display: none;
+    }
+
+    .social, .copyright {
+      margin: 1rem;
+    }
+
+    .social li {
+      display: inline-block;
+    }
+}
+
+/* Adjustments for tablet and mobile landscape */
   
-*, *:before, *:after {
-    box-sizing: inherit;
+@media (min-width: 835px) and (max-width: 1024px) {
+    .img-container {
+        height: 400px;  // reducing the height slightly for tablets
+    }
+
+    .image-text {
+        margin-top: 6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    img {
+        height: 400px;  // match the container height
+    }
 }
+
+/* Adjustments for small tablets */
   
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;           /* Using flexbox for centering */
-    align-items: center;     /* Vertical centering */
-    justify-content: center; /* Horizontal centering */
-    background: white;
+@media (min-width: 770px) and (max-width: 834px) {
+    .img-container {
+        height: 350px;  // further reduction for small tablets
+    }
+
+    .image-text {
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        height: 350px;  // match the container height
+    }
 }
+
+/* Adjustments for big phones */
   
-.gallery {
-    --s: 150px; /* control the size */
-    --g: 10px;  /* control the gap */
-    --f: 1.5;   /* control the scale factor */
+@media (min-width: 577px) and (max-width: 769px) {
+    .img-container {
+        height: 300px;  // optimized for big phones
+    }
 
-    display: grid;
-    gap: var(--g);
-    width: calc(3 * var(--s) + 2 * var(--g) + (var(--s) * (var(--f) - 1))); /* Adjusted width */
-    aspect-ratio: 1;
-    grid-template-columns: repeat(3, auto);
+    .image-text {
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+    }
 
-    overflow: hidden; /* This will ensure that enlarged images do not break the grid layout */
+    img {
+        height: 300px;  // match the container height
+    }
 }
 
-img {
-    width: 0;
-    height: 0;
-    min-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    filter: grayscale(80%);
-    transition: .35s linear;
-}
 
-img:hover {
-    filter: grayscale(0);
-    width: calc(var(--s) * var(--f));
-    height: calc(var(--s) * var(--f));
+@media (max-width: 576px) {
+    img:hover {
+        transform: none;
+    }
+    
+    .img-container {
+        height: 250px;  // optimized for mobile view
+        &:hover .img-content-hover {
+            display: none;
+        }
+    }
+
+    .image-text {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        height: 250px;  // match the container height
+    }
+
+    .img-content {
+        display: block;
+        padding: 0.5rem 0;
+    }
 }
