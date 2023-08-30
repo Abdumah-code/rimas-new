@@ -19,7 +19,7 @@
     font-size: 5rem;
   }
   .grid {
-    background-image: url(../src/gold.jpeg);
+    background-image: url(../src/gold.jpg);
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
