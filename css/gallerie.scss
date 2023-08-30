@@ -15,16 +15,20 @@
     }
 
     h2 {
-        margin-top: 4rem;
-        font-size: 4rem;
-        text-align: center;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
     }
 
     .grid {
+        background-image: url(../src/gold.jpeg);
+        background-repeat: no-repeat;
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        margin-bottom: 2rem;
     }
 
     .column {
@@ -58,58 +62,85 @@
 
 @media (min-width: 835px) and (max-width: 1024px) {
     .grid .column {
+        background-image: url(../src/gold.jpeg);
+        background-repeat: no-repeat;
         min-width: calc(33.33% - 1rem);
         padding-bottom: 0.5rem;
     }
     h2 {
-        text-align: center;
-        font-size: 3rem;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
     }
 }
 
 @media (min-width: 770px) and (max-width: 834px) {
     .grid .column {
+        background-image: url(../src/gold.jpeg);
+        background-repeat: no-repeat;
         min-width: calc(50% - 1rem);
         padding-bottom: 0.5rem;
     }
     h2 {
-        text-align: center;
-        font-size: 2.5rem;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
     }
 }
 
 @media (min-width: 577px) and (max-width: 769px) {
     .grid .column {
+        background-image: url(../src/gold.jpeg);
+        background-repeat: no-repeat;
         min-width: 100%;
         padding-bottom: 0.5rem;
     }
     h2 {
-        text-align: center;
-        font-size: 2rem;
-        margin-top: 2rem;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
     }
 }
 
 @media (min-width: 491px) and (max-width: 576px) {
     .grid .column {
+        background-image: url(../src/gold.jpeg);
+        background-repeat: no-repeat;
         min-width: 100%;
         padding-bottom: 0.5rem;
     }
     h2 {
-        text-align: center;
-        font-size: 1.8rem;
-        margin-top: 1.5rem;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
     }
 }
 
 @media (min-width: 360px) and (max-width: 490px) {
     .grid .column {
+        background-image: url(../src/gold.jpeg);
+        background-repeat: no-repeat;
         min-width: 100%;
         padding-bottom: 0.5rem;
     }
     h2 {
-        text-align: center;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 1.5rem;
-        margin-top: 1rem;
     }
 }
