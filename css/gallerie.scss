@@ -7,8 +7,7 @@
 }
 
 
-@media (min-width: 1025px) {
-
+@media (min-width: 1025px) { 
 
     .gallery {
       padding: 0 0 4rem 0;
@@ -58,11 +57,40 @@
     .img-container img:hover {
         transform: scale(1.05);
     }
+
+    .top {
+        
+        position: sticky;
+        bottom: 20px;      
+        margin-right:10px; 
+        place-self: end;
+        margin-top: calc(100vh + var(--offset));
+        z-index: 3;
+        
+        text-decoration: none;
+        padding: 10px;
+        font-family: sans-serif;
+        color: #fff;
+        background: #000;
+        border-radius: 100px;
+        white-space: nowrap;
+    }
+      
+    p {
+        font-size: 25px;
+    }
+    
+    html,
+    body {
+    scroll-behavior: smooth;
+    }
 }
 
 @media (min-width: 835px) and (max-width: 1024px) {
+  
+    
     .grid .column {
-        background-image: url(../src/gold.jpeg);
+        background-image: url(../src/gold.jpg);
         background-repeat: no-repeat;
         min-width: calc(33.33% - 1rem);
         padding-bottom: 0.5rem;
@@ -75,11 +103,40 @@
         justify-content: center;
         font-size: 5rem;
     }
+
+    .top {
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    z-index: 3;
+    
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+    }
+      
+    p {
+        font-size: 25px;
+    }
+    
+    html,
+    body {
+    scroll-behavior: smooth;
+    }
 }
 
 @media (min-width: 770px) and (max-width: 834px) {
+  
+    
     .grid .column {
-        background-image: url(../src/gold.jpeg);
+        background-image: url(../src/gold.jpg);
         background-repeat: no-repeat;
         min-width: calc(50% - 1rem);
         padding-bottom: 0.5rem;
@@ -92,11 +149,40 @@
         justify-content: center;
         font-size: 4rem;
     }
+
+    .top {
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    z-index: 3;
+    
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+    }
+      
+    p {
+        font-size: 25px;
+    }
+    
+    html,
+    body {
+    scroll-behavior: smooth;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 769px) {
+   
+    
     .grid .column {
-        background-image: url(../src/gold.jpeg);
+        background-image: url(../src/gold.jpg);
         background-repeat: no-repeat;
         min-width: 100%;
         padding-bottom: 0.5rem;
@@ -109,15 +195,45 @@
         justify-content: center;
         font-size: 3rem;
     }
+
+    .top {
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    z-index: 3;
+    
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+    }
+      
+    p {
+        font-size: 25px;
+    }
+    
+    html,
+    body {
+    scroll-behavior: smooth;
+    }
 }
 
 @media (min-width: 491px) and (max-width: 576px) {
+   
+    
     .grid .column {
-        background-image: url(../src/gold.jpeg);
+        background-image: url(../src/gold.jpg);
         background-repeat: no-repeat;
         min-width: 100%;
         padding-bottom: 0.5rem;
     }
+
     h2 {
         width: 100%;
         height: 10rem;
@@ -126,15 +242,43 @@
         justify-content: center;
         font-size: 2.5rem;
     }
+
+    .top {
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    z-index: 3;
+    
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+    }
+      
+    p {
+        font-size: 25px;
+    }
+    
+    html,
+    body {
+    scroll-behavior: smooth;
+    }
 }
 
 @media (min-width: 360px) and (max-width: 490px) {
     .grid .column {
-        background-image: url(../src/gold.jpeg);
+        background-image: url(../src/gold.jpg);
         background-repeat: no-repeat;
         min-width: 100%;
         padding-bottom: 0.5rem;
     }
+    
     h2 {
         width: 100%;
         height: 10rem;
@@ -142,5 +286,32 @@
         align-items: center;
         justify-content: center;
         font-size: 1.5rem;
+    }
+
+    .top {
+        
+        position: sticky;
+        bottom: 20px;      
+        margin-right:10px; 
+        place-self: end;
+        margin-top: calc(100vh + var(--offset));
+        z-index: 3;
+        
+        text-decoration: none;
+        padding: 10px;
+        font-family: sans-serif;
+        color: #fff;
+        background: #000;
+        border-radius: 100px;
+        white-space: nowrap;
+    }
+      
+    p {
+        font-size: 25px;
+    }
+    
+    html,
+    body {
+    scroll-behavior: smooth;
     }
 }

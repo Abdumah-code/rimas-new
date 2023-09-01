@@ -123,6 +123,39 @@
   }
 }
 @media (min-width: 1025px) {
+  nav {
+    height: 0;
+  }
+  nav .menu-icon {
+    display: none;
+  }
+  nav input[type=checkbox] {
+    display: none;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    width: 100%;
+    background-color: transparent;
+    z-index: 2;
+    top: 2rem;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0.2rem;
+    padding: 0.5em;
+    font-family: "Jost", sans-serif;
+    font-size: 1.5rem;
+  }
+  nav input[type=checkbox]:checked ~ ul {
+    display: flex;
+  }
   img {
     display: flex;
     width: 100%;

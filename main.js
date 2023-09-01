@@ -6,6 +6,29 @@ async function loadHTML(url, id) {
 
 loadHTML('./event.html', 'content');
 
+document.addEventListener("DOMContentLoaded", function() {
+    function toggleTextContent() {
+        var width = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+        if (width <= 590) {
+            document.querySelector('.ptag').classList.add('hidden');
+            document.querySelector('.ptag-short').classList.remove('hidden');
+
+            document.querySelectorAll('.p-short').forEach(p => p.classList.remove('hidden'));
+            document.querySelectorAll('section > p:not(.p-short)').forEach(p => p.classList.add('hidden'));
+        } else {
+            document.querySelector('.ptag').classList.remove('hidden');
+            document.querySelector('.ptag-short').classList.add('hidden');
+
+            document.querySelectorAll('.p-short').forEach(p => p.classList.add('hidden'));
+            document.querySelectorAll('section > p:not(.p-short)').forEach(p => p.classList.remove('hidden'));
+        }
+    }
+
+    toggleTextContent();
+    window.addEventListener('resize', toggleTextContent);
+});
+
 document.querySelector('a[href="#event"]').addEventListener('click', function(e) {
     e.preventDefault();
 
@@ -34,36 +57,4 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         location.reload();
     });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    function toggleTextContent() {
-        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-        // Assuming 576px is the breakpoint for "small screens"
-        if (width <= 769 || width <= 576) {
-            // Toggle for main content
-            document.querySelector('.ptag').classList.add('hidden');
-            document.querySelector('.ptag-short').classList.remove('hidden');
-
-            // Toggle for section content
-            document.querySelectorAll('.p-short').forEach(p => p.classList.remove('hidden'));
-            document.querySelectorAll('section > p:not(.p-short)').forEach(p => p.classList.add('hidden'));
-        } else {
-            // Toggle for main content
-            document.querySelector('.ptag').classList.remove('hidden');
-            document.querySelector('.ptag-short').classList.add('hidden');
-
-            // Toggle for section content
-            document.querySelectorAll('.p-short').forEach(p => p.classList.add('hidden'));
-            document.querySelectorAll('section > p:not(.p-short)').forEach(p => p.classList.remove('hidden'));
-        }
-        
-    }
-
-    // Initial check
-    toggleTextContent();
-
-    // Update on window resize
-    window.addEventListener('resize', toggleTextContent);
 });

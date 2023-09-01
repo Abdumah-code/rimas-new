@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/into.css">
     <link rel="stylesheet" href="./css/mainKontakt.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -13,9 +14,20 @@
 </head>
 <body>
     <header>
-        <!-- <img src="./src/logo2.png" alt=""> -->
-        <a href="./index.html" class="fas fa-home"></a>
+        <img id="home-img" src="./src/logo2.png" alt="Our companys logo">
     </header>
+
+    <nav>
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle" class="menu-icon">&#9776;</label>
+        <ul>
+          <li><a href="./index.html">Hem</a></li>
+          <li><a href="./evenemang.html">Event</a></li>
+          <li><a href="./gallerie.html">Gallerie</a></li>
+          <li><a href="./omoss.html">Om Oss</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
 
     <section class="intro">
         <img class="mainImage" src="./src/splash.jpg" alt="some resturant imagery">

@@ -136,6 +136,53 @@
 }
     
 @media (min-width: 1025px) {
+    nav {
+        height: 0;
+        .menu-icon {
+        //   display: inline-block;
+        //   cursor: pointer;
+        //   font-size: 4.5em;
+            display: none;
+        //   position: absolute;
+        //   top: -0.5rem;
+        //   margin-left: 85%;
+        //   color: #FFFFFF;
+        }
+        
+        input[type=checkbox] {
+            display: none;
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            position: fixed;
+            justify-content: end;
+            margin: 0;
+            padding: 0;
+            flex-direction: row;
+            width: 100%;
+            background-color: transparent;
+            z-index: 2;
+            top: 2rem;
+            
+            li {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0.2rem;
+                    padding: 0.5em;
+                    font-family: 'Jost', sans-serif;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        
+        input[type=checkbox]:checked ~ ul {
+            display: flex;
+        }
+    }
+    
     img {
         display: flex;
         width: 100%;
