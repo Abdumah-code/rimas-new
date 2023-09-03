@@ -57,8 +57,8 @@
         section {
             background-image: 
                 url(../src/svg/1.png),
-                url(../src/svg/2.png),
-                url(../src/svg/3.png);
+                url(../src/svg/2.png);
+                // url(../src/svg/3.png);
 
             background-position: 
                 left center, 
@@ -71,9 +71,9 @@
             justify-content: center;
             align-content: center;
             width: 100%;
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-top: 20%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            // padding-top: 1rem;
             height: 10rem;
             margin-top: 2rem;
             margin-bottom: 12rem;
