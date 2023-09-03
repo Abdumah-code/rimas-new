@@ -50,7 +50,7 @@
     font-size: 0.8rem;
   }
   main section {
-    background-image: url(../src/svg/1.png), url(../src/svg/2.png), url(../src/svg/3.png);
+    background-image: url(../src/svg/1.png), url(../src/svg/2.png);
     background-position: left center, right center, top center;
     background-size: 3rem, 3rem, 2.5rem;
     background-repeat: no-repeat;
