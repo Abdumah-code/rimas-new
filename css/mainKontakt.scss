@@ -44,6 +44,13 @@
                 background-color: #34495e;
             }
         }
+
+        a {
+            color: black;
+            font-size: 1.2rem;
+            display: flex;
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -93,6 +100,13 @@
                 background-color: #34495e;
             }
         }
+    }
+
+    a {
+        color: black;
+        font-size: 1.7rem;
+        display: flex;
+        margin-bottom: 1rem;
     }
 
     .spacer {
@@ -148,6 +162,13 @@
             &:hover {
                 background-color: #34495e;
             }
+        }
+
+          a {
+            color: black;
+            font-size: 1.7rem;
+            display: flex;
+            margin-bottom: 1rem;
         }
     }
 
@@ -205,6 +226,13 @@
                 background-color: #34495e;
             }
         }
+
+        a {
+            color: black;
+            font-size: 1.4rem;
+            display: flex;
+            margin-bottom: 1rem;
+        }
     }
 
     .spacer {
@@ -216,8 +244,6 @@
 }
 
 @media (min-width: 1025px) { 
-   
-    
     .kontakt {
         max-width: 30rem;
         margin: auto;
@@ -263,6 +289,14 @@
                 background-color: #34495e;
             }
         }
+
+        a {
+            color: black;
+            font-size: 1.7rem;
+            display: flex;
+            margin-bottom: 1rem;
+        }
+        
     }
 }
 
