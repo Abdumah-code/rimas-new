@@ -9,6 +9,11 @@
   display: none !important;
 }
 
+.scroll-animation {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
 @media (min-width: 360px) and (max-width: 490px) {
   main img {
     display: flex;

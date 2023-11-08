@@ -4,6 +4,12 @@ async function loadHTML(url, id) {
     document.getElementById(id).innerHTML = text;
 }
 
+const homeImage = document.querySelector('#home-img');
+
+homeImage.addEventListener('click', function() {
+    window.location.href = 'index.html';
+})
+
 loadHTML('./event.html', 'content');
 
 document.addEventListener("DOMContentLoaded", function() {

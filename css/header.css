@@ -90,6 +90,14 @@
     display: flex;
     justify-content: center;
   }
+  header div {
+    display: flex;
+    width: 3.2rem;
+    height: 4.5rem;
+    margin-right: 95%;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+  }
   header img {
     display: flex;
     width: 3.2rem;
@@ -97,5 +105,6 @@
     margin-right: 95%;
     margin-top: 0.5rem;
     margin-left: 1.5rem;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=header.css.map */

@@ -121,6 +121,15 @@ header {
         z-index: 2;
         display: flex;
         justify-content: center;
+
+        div {
+            display: flex;
+            width: 3.2rem;
+            height: 4.5rem;
+            margin-right: 95%;
+            margin-top: 0.5rem;
+            margin-left: 1.5rem;
+        }
     
         img {
             display: flex;
@@ -129,6 +138,7 @@ header {
             margin-right: 95%;
             margin-top: 0.5rem;
             margin-left: 1.5rem;
+            cursor: pointer;
         }
     
         // a {

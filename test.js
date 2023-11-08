@@ -1,11 +1,17 @@
-const imgContent = document.querySelectorAll('.img-content-hover');
+document.addEventListener("DOMContentLoaded", function() {
+  let animatedElements = document.querySelectorAll(".scroll-animation");
 
-function showImgContent(e) {
-  for(var i = 0; i < imgContent.length; i++) {
-    x = e.pageX;
-    y = e.pageY;
-    imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
-  }
-};
+  let observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        entry.target.style.opacity = "1";
+      } else {
+        entry.target.style.opacity = "0";
+      }
+    });
+  });
 
-document.addEventListener('mousemove', showImgContent);
+  animatedElements.forEach(element => {
+    observer.observe(element);
+  });
+});
